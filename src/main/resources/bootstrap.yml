@@ -1,0 +1,7 @@
+aws:
+  secretsmanager:
+    name: dev/kokodo/backend
+    region: ap-northeast-1
+
+encrypt:
+  key: ${CONFIG_ENCRYPT_KEY}
