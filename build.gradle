@@ -30,6 +30,10 @@ dependencies {
 	// Bootstrap
 	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 
+	// AWS SecretManager
+	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+	implementation 'org.springframework.cloud:spring-cloud-starter-aws-secrets-manager-config:2.2.6.RELEASE'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-config-server'
 	compileOnly 'org.projectlombok:lombok'
