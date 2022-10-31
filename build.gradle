@@ -27,17 +27,24 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
 	// Actuator
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
 	// Bootstrap
 	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
 
 	// AWS SecretManager
-	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
+//	implementation 'io.awspring.cloud:spring-cloud-starter-aws-secrets-manager-config:2.4.2'
+
+
+//	implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap:3.0.3'
 	implementation 'org.springframework.cloud:spring-cloud-starter-aws-secrets-manager-config:2.2.6.RELEASE'
+//	implementation 'com.amazonaws.secretsmanager:aws-secretsmanager-jdbc:1.0.8'
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.cloud:spring-cloud-config-server'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.springframework.amqp:spring-rabbit-test'
 }
@@ -45,6 +52,7 @@ dependencies {
 dependencyManagement {
 	imports {
 		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+
 	}
 }	
 
