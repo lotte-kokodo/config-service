@@ -5,7 +5,7 @@ aws:
     prefix: /secret
 
 encrypt:
-  key: ${CONFIG_ENCRYPT_KEY}
+  key: NMMNOVRBNx6WztMRqmpeLwwl2fqt1D1
 
 #hello: ${ENCRYPT_KEY}
 #encrypt:
