@@ -9,13 +9,6 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigServiceApplication {
-	@Value("${encrypt.key-store.secret}")
-	private String test;
-
-	@PostConstruct
-	public void test() {
-		System.out.println(">>> " + test);
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigServiceApplication.class, args);
