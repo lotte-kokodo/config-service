@@ -10,16 +10,19 @@ spring:
     port: 5672
     username: guest
     password: guest
-  profiles:
-    active: native
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/lotte-kokodo/config.git
+          uri: https://github.com/lotte-kokodo/config
 
 management:
   endpoints:
     web:
       exposure:
         include: health, busresfresh, beans
+
+logging:
+  level:
+    org.hibernate.SQL: info
+    org.hibernate.type: trace
