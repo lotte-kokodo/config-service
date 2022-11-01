@@ -1,11 +1,11 @@
-aws:
-  secretsmanager:
-    name: kokodo
-    region: ap-northeast-1
-    prefix: /secret
-
-encrypt:
-  key-store:
-    location: ${COFIG_ENCRYPT_KEY_LOCATION}
-    alias: ${CONFIG_ENCRYPT_KEY_ALIAS}
-    password: ${CONFIG_ENCRYPT_KEY_PASSWORD}
+#aws:
+#  secretsmanager:
+#    name: kokodo
+#    region: ap-northeast-1
+#    prefix: /secret
+#
+#encrypt:
+#  key-store:
+#    location: ${COFIG_ENCRYPT_KEY_LOCATION}
+#    alias: ${CONFIG_ENCRYPT_KEY_ALIAS}
+#    password: ${CONFIG_ENCRYPT_KEY_PASSWORD}
