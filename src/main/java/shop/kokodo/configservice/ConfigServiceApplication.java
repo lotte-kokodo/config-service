@@ -10,6 +10,14 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 @EnableConfigServer
 public class ConfigServiceApplication {
 
+	@Value("${encrypt.key-store.location}")
+	String keystoreLocation;
+
+	@PostConstruct
+	void echoKeystoreLocation() {
+		System.out.println(">>> " + keystoreLocation);
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigServiceApplication.class, args);
 	}
