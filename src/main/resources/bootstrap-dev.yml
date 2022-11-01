@@ -1,5 +1,5 @@
 encrypt:
   key-store:
-    location: file:///home/ec2-user/keystore/config-encryption-key.jks
+    location: file:${user.home}/keystore/config-encryption-key.jks
     alias: config-encryption-key
     password: kokodo2022
