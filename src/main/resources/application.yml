@@ -4,7 +4,6 @@ server:
 spring:
   application:
     name: config-service
-
   rabbitmq:
     host: 127.0.0.1
     port: 5672
@@ -15,6 +14,8 @@ spring:
       server:
         git:
           uri: https://github.com/lotte-kokodo/config
+        native:
+          search-locations: file://${user.home}/code/lotte-kokodo/config
 
 management:
   endpoints:

@@ -1,3 +1,5 @@
-spring:
-  profiles:
-    active: dev
+encrypt:
+  key-store:
+    location: file:/keystore/config-encryption-key.jks
+    alias: config-encryption-key
+    password: kokodo2022
